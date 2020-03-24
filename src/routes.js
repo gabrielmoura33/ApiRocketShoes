@@ -12,7 +12,7 @@ routes.get('/', (req, res) => {
 routes.get('/products', ProductController.index);
 routes.get('/products/:id', ProductController.show);
 
-routes.get('/amount', StockController.index);
-routes.get('/amount/:id', StockController.show);
+routes.get('/stock', StockController.index);
+routes.get('/stock/:id', StockController.show);
 
 export default routes;

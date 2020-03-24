@@ -5,7 +5,7 @@ class ProductController {
   }
 
   async show(req, res) {
-    return res.json(Product[req.params.id]);
+    return res.json(Product[req.params.id - 1]);
   }
 }
 export default new ProductController();
